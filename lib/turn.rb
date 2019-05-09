@@ -44,8 +44,10 @@ def turn(board)
   index = get_input
   
   if valid_move?(board, index) == false
-    get_input
+    index = get_input
   end
+  
+  move(board, index, token)
   
 end
   
