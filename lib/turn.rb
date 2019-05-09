@@ -33,17 +33,23 @@ def move(board, index, token = 'X')
   board[index] = token
 end
 
-def turn(board)
+def get_input
   puts "Please enter 1-9:"
   user_input = gets.strip
-  
   index = input_to_index(user_input)
+end
+
+
+def turn(board)
+  get_input
   
   if valid_move?(board, index) == false
     puts "Whoops your move was invalid, please enter 1-9:"
     user_input = gets.strip
     index = input_to_index(user_input)
   end
+  
+  
   
 end
   
