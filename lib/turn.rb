@@ -47,6 +47,7 @@ def turn(board)
     index = get_input
   end
 
+  move(board, index, token)
   
 end
   
