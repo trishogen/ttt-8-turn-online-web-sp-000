@@ -6,8 +6,9 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end 
 
-def input_to_index(input)
-  index = input - 1
+def input_to_index(user_input)
+  user_input.to_i
+  index = user_input - 1
 end
 
 def valid_move?(board, index)
