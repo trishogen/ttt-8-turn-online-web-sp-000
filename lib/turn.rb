@@ -35,6 +35,6 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  gets user_input
+  user_input.gets
 end
   
